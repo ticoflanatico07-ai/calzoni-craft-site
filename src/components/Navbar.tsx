@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoCalzoni from "@/assets/logo-calzoni.png";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -27,8 +28,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
-        <a href="#inicio" className="font-display text-2xl font-bold text-gradient-gold tracking-wide">
-          Calzoni
+        <a href="#inicio" className="flex items-center">
+          <img src={logoCalzoni} alt="Calzoni Pizzaria" className="h-12" />
         </a>
 
         {/* Desktop */}

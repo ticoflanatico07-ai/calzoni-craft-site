@@ -1,4 +1,5 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
+import logoCalzoni from "@/assets/logo-calzoni.png";
 
 const HeroSection = () => {
   return (
@@ -15,20 +16,12 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <p
-          className="font-body text-sm tracking-[0.4em] uppercase text-primary mb-6 animate-fade-in"
+        <img
+          src={logoCalzoni}
+          alt="Calzoni Pizzaria"
+          className="w-64 sm:w-80 md:w-96 mx-auto mb-8 animate-fade-in drop-shadow-2xl"
           style={{ animationDelay: "0.2s", opacity: 0 }}
-        >
-          Pizzaria Artesanal
-        </p>
-        <h1
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-fade-in-up"
-          style={{ animationDelay: "0.4s", opacity: 0 }}
-        >
-          <span className="text-gradient-gold">Calzoni</span>
-          <br />
-          <span className="text-foreground">Pizzaria</span>
-        </h1>
+        />
         <p
           className="font-body text-foreground/70 text-lg md:text-xl max-w-xl mx-auto mb-10 animate-fade-in-up"
           style={{ animationDelay: "0.6s", opacity: 0 }}
