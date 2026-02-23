@@ -16,12 +16,17 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <img
-          src={logoCalzoni}
-          alt="Calzoni Pizzaria"
-          className="w-64 sm:w-80 md:w-96 mx-auto mb-8 animate-fade-in drop-shadow-2xl"
+        <div
+          className="w-56 sm:w-64 md:w-72 mx-auto mb-8 animate-fade-in"
           style={{ animationDelay: "0.2s", opacity: 0 }}
-        />
+        >
+          <img
+            src={logoCalzoni}
+            alt="Calzoni Pizzaria"
+            className="w-full rounded-full shadow-2xl border-4 border-primary/30"
+            style={{ objectFit: "cover", aspectRatio: "1/1", objectPosition: "center 35%" }}
+          />
+        </div>
         <p
           className="font-body text-foreground/70 text-lg md:text-xl max-w-xl mx-auto mb-10 animate-fade-in-up"
           style={{ animationDelay: "0.6s", opacity: 0 }}
