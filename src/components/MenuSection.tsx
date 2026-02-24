@@ -17,30 +17,52 @@ const menuData: Category[] = [
     id: "tradicionais",
     label: "Tradicionais",
     items: [
-      { name: "Margherita", description: "Molho de tomate, mussarela de búfala, manjericão fresco e azeite extra virgem", price: "R$ 45,00" },
-      { name: "Calabresa", description: "Calabresa artesanal, cebola roxa caramelizada, azeitonas pretas e orégano", price: "R$ 42,00" },
-      { name: "Portuguesa", description: "Presunto, ovos, cebola, azeitonas, ervilha e mussarela", price: "R$ 48,00" },
-      { name: "Quatro Queijos", description: "Mussarela, gorgonzola, provolone e parmesão gratinado", price: "R$ 52,00" },
-      { name: "Pepperoni", description: "Pepperoni importado, mussarela e molho de tomate San Marzano", price: "R$ 50,00" },
+      { name: "Calabresa", description: "Molho de tomate, mussarela, calabresa fatiada e cebola", price: "" },
+      { name: "Strogonoff", description: "Molho de tomate, strogonoff de filé e mussarela", price: "" },
+      { name: "Portuguesa", description: "Molho de tomate, mussarela, presunto, ovo e cebola", price: "" },
+      { name: "Frango com Catupiry", description: "Molho de tomate, mussarela, frango, milho e catupiry", price: "" },
+      { name: "Bacon com Catupiry", description: "Molho de tomate, mussarela, tomate, catupiry e bacon", price: "" },
+      { name: "4 Queijos", description: "Molho de tomate, mussarela, queijo parmesão, queijo provolone e catupiry", price: "" },
+      { name: "Palmito com Catupiry", description: "Molho de tomate, mussarela, palmito e catupiry", price: "" },
+      { name: "Mussarela", description: "Molho de tomate, mussarela", price: "" },
+      { name: "Mista", description: "Molho de tomate, mussarela e presunto", price: "" },
+      { name: "Toscana", description: "Molho de tomate, mussarela, presunto, calabresa e bacon", price: "" },
     ],
   },
   {
     id: "especiais",
     label: "Especiais",
     items: [
-      { name: "Parma com Rúcula", description: "Presunto de Parma, rúcula selvagem, lascas de parmesão e redução de balsâmico", price: "R$ 62,00" },
-      { name: "Funghi", description: "Mix de cogumelos frescos, trufas negras, mussarela e azeite trufado", price: "R$ 68,00" },
-      { name: "Salmão Premium", description: "Salmão defumado, cream cheese, alcaparras, dill e limão siciliano", price: "R$ 72,00" },
-      { name: "Calzoni Especial", description: "Nosso calzone assinatura: recheio de mussarela, ricota, presunto e molho especial", price: "R$ 58,00" },
+      { name: "Carne Seca com Catupiry", description: "Molho de tomate, mussarela, carne seca, pimentão, tomate, cebola e catupiry", price: "" },
+      { name: "Picanha ao Molho Barbecue", description: "Molho de tomate, mussarela, picanha assada, cebola e molho barbecue", price: "" },
+      { name: "Camarão com Catupiry", description: "Molho de tomate, mussarela, catupiry e camarão", price: "" },
+      { name: "Peito de Peru", description: "Molho de tomate, mussarela, peito de peru e catupiry", price: "" },
+      { name: "Havaiana", description: "Molho de tomate, mussarela, lombo canadense, abacaxi e bacon", price: "" },
+      { name: "Fricassê de Frango", description: "Molho de tomate, fricassê de frango, mussarela e batata palha", price: "" },
+      { name: "Filé Mignon", description: "Molho de tomate, filé mignon, mussarela", price: "" },
+      { name: "Marguerita", description: "Molho de tomate, mussarela, tomate, queijo parmesão e manjericão", price: "" },
+      { name: "Atum", description: "Molho de tomate, mussarela, atum sólido e cebola", price: "" },
+      { name: "Rúcula com Tomate Seco", description: "Molho de tomate, mussarela, rúcula e tomate seco", price: "" },
     ],
   },
   {
     id: "doces",
     label: "Doces",
     items: [
-      { name: "Nutella com Morango", description: "Creme de avelã, morangos frescos fatiados e açúcar de confeiteiro", price: "R$ 48,00" },
-      { name: "Romeu e Julieta", description: "Goiabada cremosa e queijo minas derretido", price: "R$ 42,00" },
-      { name: "Banana Caramelizada", description: "Banana, doce de leite, canela e sorvete de creme", price: "R$ 46,00" },
+      { name: "Banana", description: "Mussarela, banana, canela em pó e doce de leite", price: "" },
+      { name: "Brigadeiro", description: "Leite condensado, mussarela, chocolate ao leite e chocolate granulado", price: "" },
+      { name: "Romeu & Julieta", description: "Leite condensado, mussarela, goiabada e queijo coalho", price: "" },
+      { name: "Beijinho", description: "Leite condensado, mussarela, chocolate branco e coco ralado", price: "" },
+    ],
+  },
+  {
+    id: "bordas",
+    label: "Bordas",
+    items: [
+      { name: "Borda de Catupiry", description: "Borda recheada com catupiry cremoso", price: "" },
+      { name: "Borda de Cheddar", description: "Borda recheada com cheddar derretido", price: "" },
+      { name: "Borda de Mussarela", description: "Borda recheada com mussarela gratinada", price: "" },
+      { name: "Borda de Chocolate", description: "Borda recheada com chocolate ao leite", price: "" },
     ],
   },
 ];
@@ -92,10 +114,14 @@ const MenuSection = () => {
                 <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
                   {item.name}
                 </h3>
-                <div className="flex-1 border-b border-dotted border-muted-foreground/30 min-w-[40px] translate-y-[-4px]" />
-                <span className="font-display text-xl font-semibold text-primary whitespace-nowrap">
-                  {item.price}
-                </span>
+                {item.price && (
+                  <>
+                    <div className="flex-1 border-b border-dotted border-muted-foreground/30 min-w-[40px] translate-y-[-4px]" />
+                    <span className="font-display text-xl font-semibold text-primary whitespace-nowrap">
+                      {item.price}
+                    </span>
+                  </>
+                )}
               </div>
               <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 {item.description}
