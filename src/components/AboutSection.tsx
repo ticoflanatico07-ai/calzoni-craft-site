@@ -3,18 +3,18 @@ import { Flame, Wheat, Heart } from "lucide-react";
 const features = [
   {
     icon: Flame,
-    title: "Forno a Lenha",
-    description: "Nossas pizzas são assadas em forno a lenha tradicional, garantindo a crocância e o sabor autêntico.",
+    title: "Forno Industrial Esteira a Gás",
+    description: "Nossas pizzas são assadas em forno industrial esteira a gás, garantindo assamento uniforme, crocância perfeita e agilidade na entrega.",
   },
   {
     icon: Wheat,
     title: "Massa Artesanal",
-    description: "Preparamos nossa massa diariamente com fermentação natural de 48 horas.",
+    description: "Preparamos nossa massa artesanal com fermentação curta, resultando em uma textura leve, macia e saborosa.",
   },
   {
     icon: Heart,
-    title: "Ingredientes Premium",
-    description: "Selecionamos os melhores ingredientes, priorizando produtores locais e importações de qualidade.",
+    title: "Ingredientes Selecionados",
+    description: "Selecionamos os melhores ingredientes para garantir qualidade e sabor em cada fatia.",
   },
 ];
 
