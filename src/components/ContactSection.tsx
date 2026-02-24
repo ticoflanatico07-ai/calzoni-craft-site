@@ -24,8 +24,8 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Endereço</h3>
                 <p className="font-body text-muted-foreground text-sm leading-relaxed">
-                  Rua das Pizzas, 123 — Centro<br />
-                  Sua Cidade — SP
+                  Rua das Flores, 737 — Cidade Nova<br />
+                  Itaituba — PA
                 </p>
               </div>
             </div>
@@ -37,8 +37,8 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Horário</h3>
                 <p className="font-body text-muted-foreground text-sm leading-relaxed">
-                  Terça a Domingo<br />
-                  18h às 23h30
+                  Todos os dias<br />
+                  18h às 00h
                 </p>
               </div>
             </div>
@@ -49,9 +49,9 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
-                <p className="font-body text-muted-foreground text-sm leading-relaxed">
-                  (00) 00000-0000
-                </p>
+                <a href="https://wa.me/5593999195696" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
+                  (93) 9 9919-5696
+                </a>
               </div>
             </div>
 
@@ -61,9 +61,9 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Instagram</h3>
-                <p className="font-body text-muted-foreground text-sm leading-relaxed">
-                  @calzonipizzaria
-                </p>
+                <a href="https://instagram.com/calzonidelivery" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
+                  @calzonidelivery
+                </a>
               </div>
             </div>
           </div>
