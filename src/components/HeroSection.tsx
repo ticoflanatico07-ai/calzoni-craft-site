@@ -17,13 +17,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <div
-          className="w-56 sm:w-64 md:w-72 mx-auto mb-8 animate-fade-in"
+          className="w-48 sm:w-56 md:w-64 mx-auto mb-8 animate-fade-in rounded-2xl overflow-hidden shadow-2xl border border-primary/20"
           style={{ animationDelay: "0.2s", opacity: 0 }}
         >
           <img
             src={logoCalzoni}
             alt="Calzoni Pizzaria"
-            className="w-full drop-shadow-2xl"
+            className="w-full"
           />
         </div>
         <p
