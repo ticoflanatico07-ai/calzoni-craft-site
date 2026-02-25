@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="#inicio" className="flex items-center">
-          <img src={logoCalzoni} alt="Calzoni Pizzaria" className="h-12" />
+          <img src={logoCalzoni} alt="Calzoni Pizzaria" className="h-14 drop-shadow-md" />
         </a>
 
         {/* Desktop */}
