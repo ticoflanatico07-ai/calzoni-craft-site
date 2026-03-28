@@ -82,7 +82,25 @@ const MenuSection = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Cardápio
           </h2>
-          <div className="divider-gold w-24 mx-auto" />
+          <div className="divider-gold w-24 mx-auto mb-8" />
+
+          {/* Pizza sizes */}
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {[
+              { size: "35cm", label: "Pizza G" },
+              { size: "30cm", label: "Pizza M" },
+              { size: "25cm", label: "Pizza P" },
+              { size: "18cm", label: "Mini Pizza" },
+            ].map((item) => (
+              <div
+                key={item.size}
+                className="flex flex-col items-center gap-1 px-5 py-3 rounded-sm bg-secondary border border-border/50"
+              >
+                <span className="font-display text-lg font-bold text-primary">{item.size}</span>
+                <span className="font-body text-xs tracking-wider uppercase text-muted-foreground">{item.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Category tabs */}
