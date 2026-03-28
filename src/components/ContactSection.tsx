@@ -72,7 +72,7 @@ const ContactSection = () => {
           <div className="rounded-sm overflow-hidden border border-border/50 min-h-[360px]">
             <iframe
               title="Localização Calzoni Pizzaria"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123!2d-55.9857!3d-4.2761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua%20das%20Flores%2C%20737%20-%20Cidade%20Nova%2C%20Itaituba%20-%20PA!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123!2d-55.9857!3d-4.2761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92b7561b3f0a6b1d%3A0x8e5f0e3c1a2b4d6e!2sCalzoni%20Pizzaria!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "360px" }}
