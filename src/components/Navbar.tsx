@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://wa.me/5500000000000"
+          href="https://wa.me/93992162374"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
@@ -81,7 +81,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/93992162374"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-sm font-body text-sm font-semibold tracking-wider uppercase"
