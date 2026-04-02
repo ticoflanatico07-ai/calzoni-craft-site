@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://wa.me/93992162374"
+          href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido+na+Calzoni+Pizzaria"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
