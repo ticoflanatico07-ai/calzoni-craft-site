@@ -104,8 +104,23 @@ const MenuSection = () => {
         </div>
 
         {/* Category tabs */}
-        <div className="flex justify-center gap-2 mb-16">
-          {menuData.map((cat) => (
+        <div className="flex flex-col items-center gap-2 mb-16">
+          <div className="flex justify-center gap-2">
+            {menuData.filter((cat) => cat.id !== "bordas").map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-6 py-3 rounded-sm font-body text-sm font-medium tracking-wider uppercase transition-all duration-300 ${
+                  activeCategory === cat.id
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+          {menuData.filter((cat) => cat.id === "bordas").map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
