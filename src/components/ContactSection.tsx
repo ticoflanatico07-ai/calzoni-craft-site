@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, Instagram } from "lucide-react";
+import { MapPin, Clock, Phone, Instagram, Facebook } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -49,8 +49,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
-                <a href="https://wa.me/5593991956965" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
-                  (93) 9 9195-6965
+                <a href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido+na+Calzoni+Pizzaria" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
+                  (93) 9 9216-2374
                 </a>
               </div>
             </div>
@@ -63,6 +63,18 @@ const ContactSection = () => {
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Instagram</h3>
                 <a href="https://instagram.com/calzonidelivery" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
                   @calzonidelivery
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Facebook size={22} strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Facebook</h3>
+                <a href="https://www.facebook.com/share/18dfy1H3J9/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
+                  Calzoni Pizzaria
                 </a>
               </div>
             </div>
