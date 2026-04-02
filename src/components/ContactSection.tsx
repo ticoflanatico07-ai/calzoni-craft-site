@@ -66,6 +66,18 @@ const ContactSection = () => {
                 </a>
               </div>
             </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Facebook size={22} strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Facebook</h3>
+                <a href="https://www.facebook.com/share/18dfy1H3J9/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
+                  Calzoni Pizzaria
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Google Maps */}
