@@ -38,7 +38,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
-            href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido+na+Calzoni+Pizzaria"
+            href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
@@ -46,7 +46,7 @@ const HeroSection = () => {
             Peça Agora
           </a>
           <a
-            href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido+na+Calzoni+Pizzaria"
+            href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-primary/40 text-primary px-8 py-4 rounded-sm font-body text-sm font-semibold tracking-widest uppercase hover:bg-primary/10 transition-colors"
