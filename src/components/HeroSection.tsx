@@ -17,8 +17,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <div
-          className="w-48 sm:w-56 md:w-64 mx-auto mb-8 animate-fade-in rounded-2xl overflow-hidden shadow-2xl border border-primary/20"
-          style={{ animationDelay: "0.2s", opacity: 0 }}
+          className="w-48 sm:w-56 md:w-64 mx-auto mb-8 animate-logo-3d rounded-2xl overflow-hidden border border-primary/20"
         >
           <img
             src={logoCalzoni}
