@@ -89,6 +89,30 @@
   }
 }
 
+@keyframes logo-3d-pulse {
+  0%, 100% {
+    transform: perspective(800px) scale(1) rotateY(0deg) rotateX(0deg);
+    filter: drop-shadow(0 8px 16px hsl(var(--gold) / 0.2));
+  }
+  25% {
+    transform: perspective(800px) scale(1.04) rotateY(3deg) rotateX(1.5deg);
+    filter: drop-shadow(0 12px 24px hsl(var(--gold) / 0.35));
+  }
+  50% {
+    transform: perspective(800px) scale(1.07) rotateY(0deg) rotateX(-1.5deg);
+    filter: drop-shadow(0 16px 32px hsl(var(--gold) / 0.4));
+  }
+  75% {
+    transform: perspective(800px) scale(1.04) rotateY(-3deg) rotateX(1deg);
+    filter: drop-shadow(0 12px 24px hsl(var(--gold) / 0.35));
+  }
+}
+
+.animate-logo-3d {
+  animation: logo-3d-pulse 4s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
 html {
   scroll-behavior: smooth;
 }
