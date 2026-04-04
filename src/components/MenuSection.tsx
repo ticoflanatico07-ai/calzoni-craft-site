@@ -1,4 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import pizza1 from "@/assets/pizza1.jpeg";
+import pizza2 from "@/assets/pizza2.jpeg";
+import pizza3 from "@/assets/pizza3.jpeg";
+import pizza4 from "@/assets/pizza4.jpeg";
+
+const pizzaImages = [pizza1, pizza2, pizza3, pizza4];
 
 type MenuItem = {
   name: string;
