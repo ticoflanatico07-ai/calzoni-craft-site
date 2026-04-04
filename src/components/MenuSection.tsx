@@ -1,4 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import pizza1 from "@/assets/pizza1.jpeg";
+import pizza2 from "@/assets/pizza2.jpeg";
+import pizza3 from "@/assets/pizza3.jpeg";
+import pizza4 from "@/assets/pizza4.jpeg";
+
+const pizzaImages = [pizza1, pizza2, pizza3, pizza4];
 
 type MenuItem = {
   name: string;
@@ -69,11 +75,31 @@ const menuData: Category[] = [
 
 const MenuSection = () => {
   const [activeCategory, setActiveCategory] = useState("tradicionais");
+  const [currentImage, setCurrentImage] = useState(0);
   const currentCategory = menuData.find((c) => c.id === activeCategory)!;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % pizzaImages.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="cardapio" className="py-24 bg-background">
       <div className="container mx-auto px-6">
+        {/* Image Carousel */}
+        <div className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12">
+          {pizzaImages.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Pizza ${i + 1}`}
+              className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+              style={{ opacity: currentImage === i ? 1 : 0 }}
+            />
+          ))}
+        </div>
         {/* Header */}
         <div className="text-center mb-16">
           <p className="font-body text-sm tracking-[0.4em] uppercase text-primary mb-4">
