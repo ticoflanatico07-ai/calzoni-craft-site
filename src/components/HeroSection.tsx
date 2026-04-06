@@ -16,14 +16,22 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <div
-          className="w-48 sm:w-56 md:w-64 mx-auto mb-8 animate-logo-3d rounded-2xl overflow-hidden border border-primary/20"
-        >
-          <img
-            src={logoCalzoni}
-            alt="Calzoni Pizzaria"
-            className="w-full"
-          />
+        <div className="relative w-48 sm:w-56 md:w-64 mx-auto mb-8">
+          {/* Steam effect */}
+          <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-full h-24 pointer-events-none z-20 animate-steam-fade">
+            <div className="absolute left-[20%] bottom-0 w-3 h-16 rounded-full bg-white/20 blur-md animate-steam-rise" style={{ animationDelay: '0s' }} />
+            <div className="absolute left-[35%] bottom-0 w-4 h-20 rounded-full bg-white/15 blur-lg animate-steam-rise" style={{ animationDelay: '0.3s' }} />
+            <div className="absolute left-[50%] bottom-0 w-3 h-18 rounded-full bg-white/20 blur-md animate-steam-rise" style={{ animationDelay: '0.15s' }} />
+            <div className="absolute left-[65%] bottom-0 w-4 h-16 rounded-full bg-white/15 blur-lg animate-steam-rise" style={{ animationDelay: '0.5s' }} />
+            <div className="absolute left-[78%] bottom-0 w-3 h-14 rounded-full bg-white/20 blur-md animate-steam-rise" style={{ animationDelay: '0.25s' }} />
+          </div>
+          <div className="animate-logo-3d rounded-2xl overflow-hidden border border-primary/20">
+            <img
+              src={logoCalzoni}
+              alt="Calzoni Pizzaria"
+              className="w-full"
+            />
+          </div>
         </div>
         <p
           className="font-body text-foreground/70 text-lg md:text-xl max-w-xl mx-auto mb-10 animate-fade-in-up"
