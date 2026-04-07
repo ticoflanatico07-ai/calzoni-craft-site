@@ -147,31 +147,31 @@
     opacity: 0;
     transform: translateY(0) scaleX(1);
   }
-  20% {
-    opacity: 0.6;
+  15% {
+    opacity: 0.9;
   }
-  60% {
-    opacity: 0.3;
-    transform: translateY(-40px) scaleX(1.5);
+  50% {
+    opacity: 0.5;
+    transform: translateY(-60px) scaleX(1.8);
   }
   100% {
     opacity: 0;
-    transform: translateY(-70px) scaleX(2);
+    transform: translateY(-110px) scaleX(2.5);
   }
 }
 
 @keyframes steam-fade {
   0% { opacity: 1; }
-  80% { opacity: 1; }
+  85% { opacity: 1; }
   100% { opacity: 0; }
 }
 
 .animate-steam-rise {
-  animation: steam-rise 1.5s ease-out infinite;
+  animation: steam-rise 2s ease-out infinite;
 }
 
 .animate-steam-fade {
-  animation: steam-fade 3s ease-out forwards;
+  animation: steam-fade 10s ease-out forwards;
 }
 
 html {
