@@ -47,14 +47,11 @@ const AboutSection = () => {
               className="flex items-center justify-center p-4 rounded-sm bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
               style={{ animationDelay: `${i * 0.15}s`, opacity: 0 }}
             >
-                <feature.icon size={28} strokeWidth={1.5} />
-              </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                {feature.title}
-              </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
+              <img
+                src={review.image}
+                alt={review.alt}
+                className="w-full h-auto rounded-sm object-contain"
+              />
             </div>
           ))}
         </div>
