@@ -5,7 +5,6 @@ import pizza3 from "@/assets/pizza3.jpeg";
 import pizza4 from "@/assets/pizza4.jpeg";
 
 const pizzaImages = [pizza1, pizza2, pizza3, pizza4];
-// MenuSection starts here
 
 type MenuItem = {
   name: string;
@@ -87,7 +86,7 @@ const MenuSection = () => {
   }, []);
 
   return (
-    <section id="cardapio" className="py-24 bg-background">
+    <section id="cardapio" className="pt-8 pb-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Image Carousel */}
         <div className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12">
