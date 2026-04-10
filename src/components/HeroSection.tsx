@@ -3,7 +3,7 @@ import logoCalzoni from "@/assets/logo-calzoni.png";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-0 mb-0">
       {/* Background image */}
       <div className="absolute inset-0">
         <img

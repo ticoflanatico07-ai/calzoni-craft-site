@@ -5,6 +5,7 @@ import pizza3 from "@/assets/pizza3.jpeg";
 import pizza4 from "@/assets/pizza4.jpeg";
 
 const pizzaImages = [pizza1, pizza2, pizza3, pizza4];
+// MenuSection starts here
 
 type MenuItem = {
   name: string;
