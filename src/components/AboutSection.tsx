@@ -73,6 +73,14 @@ const AboutSection = () => {
               className="w-48 h-48 object-contain"
             />
           </a>
+          <a
+            href="https://g.page/r/CUo3qbWOfID8EAE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 font-display text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300"
+          >
+            👉 Avalie já 👈
+          </a>
         </div>
       </div>
     </section>
