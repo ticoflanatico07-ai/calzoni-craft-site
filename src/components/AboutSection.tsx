@@ -33,14 +33,20 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {features.map((feature, i) => (
+        <div className="text-center mb-8">
+          <p className="font-display text-2xl md:text-3xl font-bold text-foreground">
+            O que estão falando da gente no Google
+          </p>
+          <div className="divider-gold w-24 mx-auto mt-4" />
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto items-stretch">
+          {reviews.map((review, i) => (
             <div
-              key={feature.title}
-              className="text-center p-8 rounded-sm bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 group animate-fade-in-up"
+              key={review.alt}
+              className="flex items-center justify-center p-4 rounded-sm bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
               style={{ animationDelay: `${i * 0.15}s`, opacity: 0 }}
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-6 group-hover:bg-primary/20 transition-colors">
                 <feature.icon size={28} strokeWidth={1.5} />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">
