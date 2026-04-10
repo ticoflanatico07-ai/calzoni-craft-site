@@ -56,6 +56,24 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex flex-col items-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.5s', opacity: 0 }}>
+          <p className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Nos avalie também ⭐⭐⭐⭐⭐
+          </p>
+          <a
+            href="https://g.page/r/CUo3qbWOfID8EAE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 rounded-sm p-4 inline-block"
+          >
+            <img
+              src={qrcodeAvaliacao}
+              alt="QR Code para avaliação no Google"
+              className="w-48 h-48 object-contain"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );
