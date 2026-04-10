@@ -1,6 +1,7 @@
 import reviewSunny from "@/assets/review-sunny.png";
 import reviewRiellen from "@/assets/review-riellen.png";
 import reviewEshiley from "@/assets/review-eshiley.png";
+import qrcodeAvaliacao from "@/assets/qrcode-avaliacao.png";
 
 const reviews = [
   { image: reviewSunny, alt: "Avaliação de Sunny Melo" },
