@@ -1,21 +1,11 @@
-import { Flame, Wheat, Heart } from "lucide-react";
+import reviewSunny from "@/assets/review-sunny.png";
+import reviewRiellen from "@/assets/review-riellen.png";
+import reviewEshiley from "@/assets/review-eshiley.png";
 
-const features = [
-  {
-    icon: Flame,
-    title: "Forno Industrial Esteira a Gás",
-    description: "Nossas pizzas são assadas em forno industrial esteira a gás, garantindo assamento uniforme, crocância perfeita e agilidade na entrega.",
-  },
-  {
-    icon: Wheat,
-    title: "Massa Artesanal",
-    description: "Preparamos nossa massa artesanal com fermentação curta, resultando em uma textura leve, macia e saborosa.",
-  },
-  {
-    icon: Heart,
-    title: "Ingredientes Selecionados",
-    description: "Selecionamos os melhores ingredientes para garantir qualidade e sabor em cada fatia.",
-  },
+const reviews = [
+  { image: reviewSunny, alt: "Avaliação de Sunny Melo" },
+  { image: reviewRiellen, alt: "Avaliação de Riellen Mota" },
+  { image: reviewEshiley, alt: "Avaliação de Eshiley Fialho" },
 ];
 
 const AboutSection = () => {
