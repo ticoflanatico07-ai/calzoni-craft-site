@@ -86,10 +86,10 @@ const MenuSection = () => {
   }, []);
 
   return (
-    <section id="cardapio" className="py-24 bg-background">
+    <section id="cardapio" className="pt-8 pb-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Image Carousel */}
-        <div className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12">
+        <div id="fotos" className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12 scroll-mt-20">
           {pizzaImages.map((img, i) => (
             <img
               key={i}
