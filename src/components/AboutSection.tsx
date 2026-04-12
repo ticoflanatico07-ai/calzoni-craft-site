@@ -77,9 +77,11 @@ const AboutSection = () => {
             href="https://g.page/r/CUo3qbWOfID8EAE/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 font-display text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300 underline"
+            className="mt-4 font-display text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300 inline-flex items-center gap-1"
           >
-            👉 Avalie já 👈
+            <span className="animate-[point-right_1s_ease-in-out_infinite]">👉</span>
+            <span className="underline">Avalie já</span>
+            <span className="animate-[point-left_1s_ease-in-out_infinite]">👈</span>
           </a>
         </div>
       </div>
