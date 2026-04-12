@@ -77,7 +77,7 @@ const AboutSection = () => {
             href="https://g.page/r/CUo3qbWOfID8EAE/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 font-display text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300"
+            className="mt-4 font-display text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300 underline"
           >
             👉 Avalie já 👈
           </a>
