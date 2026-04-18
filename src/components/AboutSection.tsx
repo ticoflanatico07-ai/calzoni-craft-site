@@ -58,8 +58,11 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col items-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.5s', opacity: 0 }}>
-          <p className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Nos avalie também ⭐⭐⭐⭐⭐
+          <p className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2 text-center">
+            Nos avalie também
+          </p>
+          <p className="text-2xl md:text-3xl mb-4 text-center">
+            ⭐⭐⭐⭐⭐
           </p>
           <a
             href="https://g.page/r/CUo3qbWOfID8EAE/review"
