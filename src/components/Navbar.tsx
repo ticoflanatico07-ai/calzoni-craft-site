@@ -56,13 +56,25 @@ const Navbar = () => {
           Peça Agora
         </a>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
-          className="md:hidden text-foreground"
-        >
-          {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile actions */}
+        <div className="md:hidden flex items-center gap-3">
+          {isScrolled && (
+            <a
+              href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-sm font-body text-xs font-semibold tracking-wider uppercase hover:bg-gold-light transition-all animate-fade-in"
+            >
+              Peça Agora
+            </a>
+          )}
+          <button
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+            className="text-foreground"
+          >
+            {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
