@@ -113,10 +113,10 @@ const MenuSection = () => {
           {/* Pizza sizes */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {[
-              { size: "35cm", label: "Pizza G" },
-              { size: "30cm", label: "Pizza M" },
-              { size: "25cm", label: "Pizza P" },
-              { size: "18cm", label: "Mini Pizza" },
+              { size: "35cm", label: "Pizza G", slices: "8 fatias" },
+              { size: "30cm", label: "Pizza M", slices: "6 fatias" },
+              { size: "25cm", label: "Pizza P", slices: "4 fatias" },
+              { size: "18cm", label: "Mini Pizza", slices: "" },
             ].map((item) => (
               <div
                 key={item.size}
@@ -124,6 +124,9 @@ const MenuSection = () => {
               >
                 <span className="font-display text-lg font-bold text-primary">{item.size}</span>
                 <span className="font-body text-xs tracking-wider uppercase text-muted-foreground">{item.label}</span>
+                {item.slices && (
+                  <span className="font-body text-[10px] tracking-wider uppercase text-primary/80">{item.slices}</span>
+                )}
               </div>
             ))}
           </div>
