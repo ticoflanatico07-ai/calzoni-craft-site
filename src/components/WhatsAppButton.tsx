@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
       <img
         src={mascot}
         alt="Mascote Calzoni apontando para o WhatsApp"
-        className="w-20 h-20 md:w-24 md:h-24 -mb-2 pointer-events-none select-none drop-shadow-lg animate-bounce-slow"
+        className="w-20 h-20 md:w-24 md:h-24 -mb-2 pointer-events-none select-none drop-shadow-lg"
       />
       <a
       href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
