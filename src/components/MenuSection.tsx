@@ -21,7 +21,7 @@ type Category = {
 const menuData: Category[] = [
   {
     id: "tradicionais",
-    label: "Tradicionais",
+    label: "Pizza Tradicionais",
     items: [
       { name: "Calabresa", description: "Molho de tomate, mussarela, calabresa fatiada e cebola", price: "" },
       { name: "Strogonoff", description: "Molho de tomate, strogonoff de filé e mussarela", price: "" },
@@ -37,7 +37,7 @@ const menuData: Category[] = [
   },
   {
     id: "especiais",
-    label: "Especiais",
+    label: "Pizza Especiais",
     items: [
       { name: "Carne Seca com Catupiry", description: "Molho de tomate, mussarela, carne seca, pimentão, tomate, cebola e catupiry", price: "" },
       { name: "Picanha ao Molho Barbecue", description: "Molho de tomate, mussarela, picanha assada, cebola e molho barbecue", price: "" },
@@ -53,7 +53,7 @@ const menuData: Category[] = [
   },
   {
     id: "doces",
-    label: "Doces",
+    label: "Pizza Doces",
     items: [
       { name: "Banana", description: "Mussarela, banana, canela em pó e doce de leite", price: "" },
       { name: "Brigadeiro", description: "Leite condensado, mussarela, chocolate ao leite e chocolate granulado", price: "" },
