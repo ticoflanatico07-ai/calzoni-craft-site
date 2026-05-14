@@ -21,7 +21,7 @@ type Category = {
 const menuData: Category[] = [
   {
     id: "tradicionais",
-    label: "Tradicionais",
+    label: "Pizza Tradicionais",
     items: [
       { name: "Calabresa", description: "Molho de tomate, mussarela, calabresa fatiada e cebola", price: "" },
       { name: "Strogonoff", description: "Molho de tomate, strogonoff de filé e mussarela", price: "" },
@@ -37,7 +37,7 @@ const menuData: Category[] = [
   },
   {
     id: "especiais",
-    label: "Especiais",
+    label: "Pizza Especiais",
     items: [
       { name: "Carne Seca com Catupiry", description: "Molho de tomate, mussarela, carne seca, pimentão, tomate, cebola e catupiry", price: "" },
       { name: "Picanha ao Molho Barbecue", description: "Molho de tomate, mussarela, picanha assada, cebola e molho barbecue", price: "" },
@@ -53,7 +53,7 @@ const menuData: Category[] = [
   },
   {
     id: "doces",
-    label: "Doces",
+    label: "Pizza Doces",
     items: [
       { name: "Banana", description: "Mussarela, banana, canela em pó e doce de leite", price: "" },
       { name: "Brigadeiro", description: "Leite condensado, mussarela, chocolate ao leite e chocolate granulado", price: "" },
@@ -86,10 +86,10 @@ const MenuSection = () => {
   }, []);
 
   return (
-    <section id="cardapio" className="py-24 bg-background">
+    <section id="cardapio" className="pt-8 pb-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Image Carousel */}
-        <div className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12">
+        <div id="fotos" className="relative w-full max-w-3xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden mb-12 scroll-mt-20">
           {pizzaImages.map((img, i) => (
             <img
               key={i}
@@ -113,10 +113,10 @@ const MenuSection = () => {
           {/* Pizza sizes */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {[
-              { size: "35cm", label: "Pizza G" },
-              { size: "30cm", label: "Pizza M" },
-              { size: "25cm", label: "Pizza P" },
-              { size: "18cm", label: "Mini Pizza" },
+              { size: "35cm", label: "Pizza G", slices: "8 fatias" },
+              { size: "30cm", label: "Pizza M", slices: "6 fatias" },
+              { size: "25cm", label: "Pizza P", slices: "4 fatias" },
+              { size: "18cm", label: "Mini Pizza", slices: "" },
             ].map((item) => (
               <div
                 key={item.size}
@@ -124,6 +124,9 @@ const MenuSection = () => {
               >
                 <span className="font-display text-lg font-bold text-primary">{item.size}</span>
                 <span className="font-body text-xs tracking-wider uppercase text-muted-foreground">{item.label}</span>
+                {item.slices && (
+                  <span className="font-body text-[10px] tracking-wider uppercase text-primary/80">{item.slices}</span>
+                )}
               </div>
             ))}
           </div>
