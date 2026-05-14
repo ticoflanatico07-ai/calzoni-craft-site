@@ -21,9 +21,9 @@ const HeroSection = () => {
           <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-full h-32 pointer-events-none z-20">
             <div className="absolute left-[15%] bottom-0 w-4 h-20 rounded-full bg-white/40 blur-lg animate-steam-rise" style={{ animationDelay: '0s' }} />
             <div className="absolute left-[25%] bottom-0 w-5 h-24 rounded-full bg-white/30 blur-xl animate-steam-rise" style={{ animationDelay: '0.4s' }} />
-            <div className="absolute left-[35%] bottom-0 w-4 h-22 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.2s' }} />
-            <div className="absolute left-[45%] bottom-0 w-5 h-26 rounded-full bg-white/40 blur-xl animate-steam-rise" style={{ animationDelay: '0.6s' }} />
-            <div className="absolute left-[55%] bottom-0 w-4 h-22 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.1s' }} />
+            <div className="absolute left-[35%] bottom-0 w-4 h-24 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.2s' }} />
+            <div className="absolute left-[45%] bottom-0 w-5 h-28 rounded-full bg-white/40 blur-xl animate-steam-rise" style={{ animationDelay: '0.6s' }} />
+            <div className="absolute left-[55%] bottom-0 w-4 h-24 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.1s' }} />
             <div className="absolute left-[65%] bottom-0 w-5 h-24 rounded-full bg-white/30 blur-xl animate-steam-rise" style={{ animationDelay: '0.5s' }} />
             <div className="absolute left-[75%] bottom-0 w-4 h-20 rounded-full bg-white/40 blur-lg animate-steam-rise" style={{ animationDelay: '0.3s' }} />
             <div className="absolute left-[85%] bottom-0 w-3 h-18 rounded-full bg-white/35 blur-md animate-steam-rise" style={{ animationDelay: '0.7s' }} />
