@@ -26,7 +26,7 @@ const HeroSection = () => {
             <div className="absolute left-[52%] bottom-0 w-5 h-28 rounded-full bg-white/55 blur-xl animate-steam-rise" style={{ animationDelay: '0.1s' }} />
             <div className="absolute left-[62%] bottom-0 w-6 h-28 rounded-full bg-white/50 blur-2xl animate-steam-rise" style={{ animationDelay: '0.5s' }} />
             <div className="absolute left-[72%] bottom-0 w-5 h-24 rounded-full bg-white/60 blur-xl animate-steam-rise" style={{ animationDelay: '0.3s' }} />
-            <div className="absolute left-[82%] bottom-0 w-4 h-22 rounded-full bg-white/55 blur-lg animate-steam-rise" style={{ animationDelay: '0.7s' }} />
+            <div className="absolute left-[82%] bottom-0 w-4 h-24 rounded-full bg-white/55 blur-lg animate-steam-rise" style={{ animationDelay: '0.7s' }} />
           </div>
           <div className="animate-logo-3d rounded-2xl overflow-hidden border border-primary/20">
             <img
