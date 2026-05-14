@@ -2,18 +2,17 @@ import mascot from "@/assets/mascot-pointing.png";
 
 const WhatsAppButton = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-50 w-14 h-14">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center">
       <img
         src={mascot}
-        alt=""
-        aria-hidden="true"
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 md:w-32 md:h-32 pointer-events-none select-none drop-shadow-lg z-0"
+        alt="Mascote Calzoni apontando para o WhatsApp"
+        className="w-20 h-20 md:w-24 md:h-24 -mb-2 pointer-events-none select-none drop-shadow-lg"
       />
       <a
       href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
       target="_blank"
       rel="noopener noreferrer"
-      className="relative z-10 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"
+      className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"
       aria-label="Fale conosco pelo WhatsApp"
     >
       <svg viewBox="0 0 32 32" width="30" height="30" fill="white">
