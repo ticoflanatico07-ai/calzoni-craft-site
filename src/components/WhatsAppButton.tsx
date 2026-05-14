@@ -2,11 +2,11 @@ import mascot from "@/assets/mascot-pointing.png";
 
 const WhatsAppButton = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center">
+    <div className="fixed bottom-6 right-6 z-50">
       <img
         src={mascot}
         alt="Mascote Calzoni apontando para o WhatsApp"
-        className="w-20 h-20 md:w-24 md:h-24 -mb-2 pointer-events-none select-none drop-shadow-lg"
+        className="absolute left-1/2 -translate-x-1/2 -top-16 md:-top-20 w-16 h-16 md:w-20 md:h-20 pointer-events-none select-none drop-shadow-lg"
       />
       <a
       href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
