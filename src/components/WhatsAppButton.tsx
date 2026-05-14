@@ -1,25 +1,16 @@
-import mascot from "@/assets/mascot-pointing.png";
-
 const WhatsAppButton = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <img
-        src={mascot}
-        alt="Mascote Calzoni apontando para o WhatsApp"
-        className="absolute left-1/2 -translate-x-1/2 -top-16 md:-top-20 w-16 h-16 md:w-20 md:h-20 pointer-events-none select-none drop-shadow-lg"
-      />
-      <a
+    <a
       href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"
       aria-label="Fale conosco pelo WhatsApp"
     >
       <svg viewBox="0 0 32 32" width="30" height="30" fill="white">
         <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.129 6.744 3.047 9.379L1.054 31.25l6.1-1.953a15.93 15.93 0 008.85 2.703C24.826 32 32 24.826 32 16.004 32 7.176 24.826 0 16.004 0zm9.302 22.602c-.39 1.1-2.266 2.043-3.137 2.137-.793.086-1.793.121-2.895-.184a26.148 26.148 0 01-2.625-.97c-4.62-1.996-7.637-6.695-7.87-7.004-.23-.305-1.883-2.504-1.883-4.777 0-2.27 1.191-3.387 1.613-3.852.39-.43 1.04-.613 1.66-.613.2 0 .379.01.54.019.464.02.695.046 1 .77.383.906 1.316 3.214 1.43 3.449.117.23.234.543.078.852-.152.312-.23.504-.46.777-.228.27-.48.605-.687.812-.23.23-.468.48-.2.942.27.461 1.195 1.969 2.566 3.188 1.758 1.563 3.238 2.047 3.699 2.277.46.23.73.195 1-.117.273-.313 1.172-1.367 1.484-1.836.313-.465.625-.39 1.055-.234.43.152 2.734 1.29 3.2 1.524.464.23.773.348.89.543.117.191.117 1.129-.273 2.226z"/>
       </svg>
-      </a>
-    </div>
+    </a>
   );
 };
 
