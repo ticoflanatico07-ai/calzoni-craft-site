@@ -13,27 +13,6 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="py-24 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="font-body text-sm tracking-[0.4em] uppercase text-primary mb-4">
-            Nossa História
-          </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Sobre a Calzoni
-          </h2>
-          <div className="divider-gold w-24 mx-auto mb-8" />
-          <div className="font-body text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed space-y-4">
-            <p>
-              A Calzoni nasceu de um sonho que começou em 2019, idealizado por três irmãos apaixonados por pizza e pelo desejo de empreender. Após anos de planejamento e dedicação, esse sonho finalmente saiu do papel, dando origem a uma pizzaria criada com carinho e propósito.
-            </p>
-            <p>
-              Desde o início, nosso objetivo sempre foi oferecer aos nossos clientes a melhor pizza da cidade, unindo sabor, qualidade e uma experiência única a cada pedido. Trabalhamos com ingredientes selecionados e de alta qualidade, garantindo que cada pizza seja preparada com excelência.
-            </p>
-            <p>
-              Mais do que servir pizzas, queremos construir momentos especiais. E esse é apenas o começo: em breve, pretendemos ampliar nosso espaço para oferecer ainda mais conforto e acolhimento aos nossos clientes, que para nós já são amigos.
-            </p>
-          </div>
-        </div>
-
         <div className="text-center mb-8">
           <p className="font-display text-2xl md:text-3xl font-bold text-foreground">
             O que estão falando da gente no Google
