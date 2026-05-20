@@ -10,9 +10,26 @@ const navItems = [
   { label: "Contato", href: "#contato" },
 ];
 
+const OPENING_DATE = new Date("2026-06-07T00:00:00-03:00").getTime();
+
+const useCountdown = () => {
+  const [now, setNow] = useState(Date.now());
+  useEffect(() => {
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, []);
+  const diff = Math.max(0, OPENING_DATE - now);
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+  return { days, hours, minutes, seconds };
+};
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const { days, hours, minutes, seconds } = useCountdown();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -21,8 +38,19 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white text-center py-1.5 px-3 font-body text-xs sm:text-sm tracking-wide shadow-md">
+        <span className="inline-flex items-center gap-1.5 flex-wrap justify-center">
+          <span aria-hidden>🎀✂️</span>
+          <span className="font-semibold uppercase">Inauguração 07/06/2026</span>
+          <span className="hidden sm:inline opacity-80">•</span>
+          <span className="tabular-nums font-mono">
+            {days}d {String(hours).padStart(2, "0")}h {String(minutes).padStart(2, "0")}m {String(seconds).padStart(2, "0")}s
+          </span>
+        </span>
+      </div>
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-8 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md border-b border-gold/20 py-3"
           : "bg-transparent py-6"
@@ -106,6 +134,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    </>
   );
 };
 
