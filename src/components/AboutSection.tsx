@@ -1,12 +1,12 @@
-import reviewSunny from "@/assets/review-sunny.png";
-import reviewRiellen from "@/assets/review-riellen.png";
-import reviewEshiley from "@/assets/review-eshiley.png";
+import reviewMiah from "@/assets/review-miah.jpeg";
+import reviewJeffersonSaldanha from "@/assets/review-jefferson-saldanha.jpeg";
+import reviewJeffersonCaldas from "@/assets/review-jefferson-caldas.jpeg";
 import qrcodeAvaliacao from "@/assets/qrcode-avaliacao.png";
 
 const reviews = [
-  { image: reviewSunny, alt: "Avaliação de Sunny Melo" },
-  { image: reviewRiellen, alt: "Avaliação de Riellen Mota" },
-  { image: reviewEshiley, alt: "Avaliação de Eshiley Fialho" },
+  { image: reviewMiah, alt: "Avaliação de Miah Lopes" },
+  { image: reviewJeffersonSaldanha, alt: "Avaliação de Jefferson Saldanha" },
+  { image: reviewJeffersonCaldas, alt: "Avaliação de Jefferson Caldas" },
 ];
 
 const AboutSection = () => {
