@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-brand-red via-red-700 to-brand-red text-white text-center py-1.5 px-3 font-body text-xs sm:text-sm tracking-wide shadow-md">
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white text-center py-1.5 px-3 font-body text-xs sm:text-sm tracking-wide shadow-md">
         <span className="inline-flex items-center gap-1.5 flex-wrap justify-center">
           <span aria-hidden>🎀✂️</span>
           <span className="font-semibold uppercase">Inauguração 07/06/2026</span>
