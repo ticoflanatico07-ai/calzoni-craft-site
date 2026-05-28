@@ -22,17 +22,20 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto items-stretch">
           {reviews.map((review, i) => (
-            <div
+            <a
               key={review.alt}
-              className="flex items-center justify-center p-4 rounded-sm bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 animate-fade-in-up"
+              href="https://g.page/r/CUo3qbWOfID8EAE/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center p-4 rounded-sm bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 animate-fade-in-up cursor-pointer group"
               style={{ animationDelay: `${i * 0.15}s`, opacity: 0 }}
             >
               <img
                 src={review.image}
                 alt={review.alt}
-                className="w-full h-auto rounded-sm object-contain"
+                className="w-full h-auto rounded-sm object-contain group-hover:scale-[1.02] transition-transform duration-500"
               />
-            </div>
+            </a>
           ))}
         </div>
 
