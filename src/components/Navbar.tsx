@@ -76,7 +76,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+          href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
@@ -88,7 +88,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+              href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-sm font-body text-xs font-semibold tracking-wider uppercase hover:bg-gold-light transition-all animate-fade-in"
@@ -122,7 +122,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+                href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-sm font-body text-sm font-semibold tracking-wider uppercase"
