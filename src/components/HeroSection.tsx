@@ -1,5 +1,7 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
+import { trackOrderClick } from "@/lib/analytics";
+
 
 const HeroSection = () => {
   return (
@@ -51,6 +53,7 @@ const HeroSection = () => {
             href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackOrderClick("hero")}
             className="bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
           >
             Peça Agora
