@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logoCalzoni from "@/assets/logo-calzoni.png";
+import { trackOrderClick } from "@/lib/analytics";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -79,6 +80,7 @@ const Navbar = () => {
           href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackOrderClick("navbar_desktop")}
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
         >
           Peça Agora
@@ -91,6 +93,7 @@ const Navbar = () => {
               href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackOrderClick("navbar_mobile_scrolled")}
               className="inline-flex items-center bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-sm font-body text-xs font-semibold tracking-wider uppercase hover:bg-gold-light transition-all animate-fade-in"
             >
               Peça Agora
@@ -125,6 +128,7 @@ const Navbar = () => {
                 href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackOrderClick("navbar_mobile_menu")}
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-sm font-body text-sm font-semibold tracking-wider uppercase"
               >
                 Peça Agora
