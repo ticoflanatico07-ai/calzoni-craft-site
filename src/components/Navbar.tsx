@@ -11,7 +11,7 @@ const navItems = [
   { label: "Contato", href: "#contato" },
 ];
 
-const OPENING_DATE = new Date("2026-06-08T00:00:00-03:00").getTime();
+const OPENING_DATE = new Date("2026-06-09T00:00:00-03:00").getTime();
 
 const useCountdown = () => {
   const [now, setNow] = useState(Date.now());
