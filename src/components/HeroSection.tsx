@@ -50,7 +50,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
-            href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
+            href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackOrderClick("hero")}
