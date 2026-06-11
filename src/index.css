@@ -184,6 +184,25 @@
   50% { transform: translateX(-6px); }
 }
 
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  100% {
+    transform: translate3d(var(--sway, 30px), 110vh, 0) rotate(720deg);
+    opacity: 0.9;
+  }
+}
+
+.animate-confetti-fall {
+  animation-name: confetti-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
 html {
   scroll-behavior: smooth;
 }
