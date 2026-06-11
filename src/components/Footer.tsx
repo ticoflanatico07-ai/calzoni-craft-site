@@ -11,7 +11,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Calzoni Pizzaria. Todos os direitos reservados.
         </p>
         <p className="font-body text-xs text-muted-foreground tracking-wider mt-2">
-          EMESILDO OLIVEIRA PEREIRA · CNPJ: 48.175.063/0001-05
+          CALZONI PIZZARIA LTDA · CNPJ: 48.175.063/0001-05
         </p>
       </div>
     </footer>
