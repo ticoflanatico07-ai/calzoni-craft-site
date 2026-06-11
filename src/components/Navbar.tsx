@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
+              href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackOrderClick("navbar_mobile_scrolled")}
@@ -98,7 +98,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa"
+                href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackOrderClick("navbar_mobile_menu")}
