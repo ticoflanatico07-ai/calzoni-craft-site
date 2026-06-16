@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, Instagram, Facebook } from "lucide-react";
+import { MapPin, Clock, Phone, Facebook } from "lucide-react";
 
 const ContactSection = () => {
   return (
