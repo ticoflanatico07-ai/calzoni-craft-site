@@ -55,17 +55,6 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Instagram size={22} strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Instagram</h3>
-                <a href="https://instagram.com/calzonidelivery" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors">
-                  @calzonidelivery
-                </a>
-              </div>
-            </div>
 
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
