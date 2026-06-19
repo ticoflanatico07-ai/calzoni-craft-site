@@ -12,6 +12,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <BrazilConfetti />
+      <MatchCountdown />
       <Navbar />
       <HeroSection />
       <MenuSection />
