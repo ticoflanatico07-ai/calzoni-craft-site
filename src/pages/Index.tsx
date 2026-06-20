@@ -5,14 +5,10 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import BrazilConfetti from "@/components/BrazilConfetti";
-import MatchCountdown from "@/components/MatchCountdown";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <BrazilConfetti />
-      <MatchCountdown />
       <Navbar />
       <HeroSection />
       <MenuSection />
