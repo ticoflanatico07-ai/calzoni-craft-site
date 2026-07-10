@@ -5,8 +5,6 @@ import { trackOrderClick } from "@/lib/analytics";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
-  { label: "Cardápio", href: "#cardapio" },
-  { label: "Fotos", href: "#fotos" },
   { label: "Sobre", href: "#sobre" },
   { label: "Contato", href: "#contato" },
 ];
