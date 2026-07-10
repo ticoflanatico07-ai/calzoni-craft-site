@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @keyframes marquee-rtl {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee-rtl {
+    animation: marquee-rtl 60s linear infinite;
+  }
+}
+
 @layer base {
   :root {
     --background: 20 14% 8%;

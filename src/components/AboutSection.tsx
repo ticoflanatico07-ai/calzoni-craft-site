@@ -1,12 +1,26 @@
-import reviewMiah from "@/assets/review-miah.jpeg";
-import reviewJeffersonSaldanha from "@/assets/review-jefferson-saldanha.jpeg";
-import reviewJeffersonCaldas from "@/assets/review-jefferson-caldas.jpeg";
 import qrcodeAvaliacao from "@/assets/qrcode-avaliacao.png";
+import r1 from "@/assets/reviews/r1.jpeg";
+import r2 from "@/assets/reviews/r2.jpeg";
+import r3 from "@/assets/reviews/r3.jpeg";
+import r4 from "@/assets/reviews/r4.jpeg";
+import r5 from "@/assets/reviews/r5.jpeg";
+import r6 from "@/assets/reviews/r6.jpeg";
+import r7 from "@/assets/reviews/r7.jpeg";
+import r8 from "@/assets/reviews/r8.jpeg";
+import r9 from "@/assets/reviews/r9.jpeg";
+import r10 from "@/assets/reviews/r10.jpeg";
 
 const reviews = [
-  { image: reviewMiah, alt: "Avaliação de Miah Lopes" },
-  { image: reviewJeffersonSaldanha, alt: "Avaliação de Jefferson Saldanha" },
-  { image: reviewJeffersonCaldas, alt: "Avaliação de Jefferson Caldas" },
+  { image: r1, alt: "Avaliação de Dheimeson Alves Feitosa" },
+  { image: r2, alt: "Avaliação de Ellen Moreno Pereira" },
+  { image: r3, alt: "Avaliação de Marta Martyns" },
+  { image: r4, alt: "Avaliação de Cleidiane Ribeiro Santos Baima" },
+  { image: r5, alt: "Avaliação de Pedroso Sousa" },
+  { image: r6, alt: "Avaliação de Julia Pedroso" },
+  { image: r7, alt: "Avaliação de Willian Silva" },
+  { image: r8, alt: "Avaliação de manu123" },
+  { image: r9, alt: "Avaliação de Edmilson Junior" },
+  { image: r10, alt: "Avaliação de Katiane Araujo" },
 ];
 
 const AboutSection = () => {
@@ -20,23 +34,33 @@ const AboutSection = () => {
           <div className="divider-gold w-24 mx-auto mt-4" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto items-stretch">
-          {reviews.map((review, i) => (
-            <a
-              key={review.alt}
-              href="https://g.page/r/CUo3qbWOfID8EAE/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center p-4 rounded-sm bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 animate-fade-in-up cursor-pointer group"
-              style={{ animationDelay: `${i * 0.15}s`, opacity: 0 }}
-            >
-              <img
-                src={review.image}
-                alt={review.alt}
-                className="w-full h-auto rounded-sm object-contain group-hover:scale-[1.02] transition-transform duration-500"
-              />
-            </a>
-          ))}
+        <div
+          className="relative overflow-hidden w-full"
+          style={{
+            maskImage:
+              "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+          }}
+        >
+          <div className="flex w-max gap-6 animate-marquee-rtl hover:[animation-play-state:paused]">
+            {[...reviews, ...reviews].map((review, i) => (
+              <a
+                key={`${review.alt}-${i}`}
+                href="https://g.page/r/CUo3qbWOfID8EAE/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 w-[280px] md:w-[340px] flex items-center justify-center p-3 rounded-sm bg-card border border-border/50 hover:border-primary/50 transition-colors duration-300 group"
+              >
+                <img
+                  src={review.image}
+                  alt={review.alt}
+                  loading="lazy"
+                  className="w-full h-auto rounded-sm object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col items-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.5s', opacity: 0 }}>
