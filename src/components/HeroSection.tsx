@@ -65,6 +65,17 @@ const HeroSection = () => {
               <path d="m19 12-7 7-7-7" />
             </svg>
           </a>
+          <div className="mt-4 flex flex-col items-center gap-3">
+            <img
+              src={cupomFidelidade.url}
+              alt="Campanha Cupom Fidelidade Calzoni"
+              className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
+              loading="lazy"
+            />
+            <p className="font-display text-lg md:text-xl font-bold text-gradient-gold text-center">
+              Junte 10 cupons e ganhe uma pizza Grande
+            </p>
+          </div>
         </div>
       </div>
     </section>
