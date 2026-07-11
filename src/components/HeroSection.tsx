@@ -67,7 +67,7 @@ const HeroSection = () => {
           </a>
           <div className="mt-4 flex flex-col items-center gap-3">
             <img
-              src={cupomFidelidade.url}
+              src={cupomFidelidade}
               alt="Campanha Cupom Fidelidade Calzoni"
               className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
               loading="lazy"
