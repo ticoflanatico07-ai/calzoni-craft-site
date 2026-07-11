@@ -1,5 +1,6 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
+import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
 import { trackOrderClick } from "@/lib/analytics";
 
 
@@ -64,6 +65,17 @@ const HeroSection = () => {
               <path d="m19 12-7 7-7-7" />
             </svg>
           </a>
+          <div className="mt-4 flex flex-col items-center gap-3">
+            <img
+              src={cupomFidelidade}
+              alt="Campanha Cupom Fidelidade Calzoni"
+              className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
+              loading="lazy"
+            />
+            <p className="font-display text-sm sm:text-base md:text-xl font-bold text-white text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] leading-tight px-2">
+              Junte 10 cupons e ganhe uma pizza Grande
+            </p>
+          </div>
         </div>
       </div>
     </section>
