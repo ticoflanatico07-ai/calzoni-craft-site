@@ -72,7 +72,7 @@ const HeroSection = () => {
               className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
               loading="lazy"
             />
-            <p className="font-display text-lg md:text-xl font-bold text-white text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            <p className="font-display text-sm sm:text-base md:text-xl font-bold text-white text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] leading-tight px-2">
               Junte 10 cupons e ganhe uma pizza Grande
             </p>
           </div>
