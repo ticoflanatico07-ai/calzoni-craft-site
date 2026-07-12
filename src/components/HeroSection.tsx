@@ -19,7 +19,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <div className="relative w-48 sm:w-56 md:w-64 mx-auto mb-8">
+        <div className="relative w-48 sm:w-56 md:w-64 mx-auto mb-8 mt-16 sm:mt-20 md:mt-24">
           {/* Steam effect */}
           <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[130%] h-32 pointer-events-none z-20 animate-steam-fade">
             <div className="absolute left-[15%] bottom-0 w-5 h-20 rounded-full bg-white/40 blur-md animate-steam-rise" style={{ animationDelay: '0s' }} />
