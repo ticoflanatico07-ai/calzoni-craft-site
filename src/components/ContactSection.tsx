@@ -45,16 +45,16 @@ const contactItems = [
     icon: <WhatsAppLogo className="w-5 h-5" />,
     iconBg: "bg-[#25D366]",
     title: "💬 WhatsApp",
-    content: (
-      <a
-        href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="font-body text-muted-foreground text-sm leading-relaxed hover:text-[#25D366] transition-colors"
-      >
-        📞 (93) 9 9216-2374
-      </a>
-    ),
+      content: (
+        <a
+          href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-body text-muted-foreground text-sm leading-relaxed hover:text-[#25D366] transition-colors"
+        >
+          📞 (93) 9 9207-9482
+        </a>
+      ),
   },
   {
     icon: <InstagramLogo className="w-5 h-5" />,
