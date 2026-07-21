@@ -48,7 +48,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+          href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackOrderClick("navbar_desktop")}
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+              href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackOrderClick("navbar_mobile_scrolled")}
@@ -96,7 +96,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/5593992162374?text=Olá!+Gostaria+de+fazer+um+pedido"
+                href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackOrderClick("navbar_mobile_menu")}
