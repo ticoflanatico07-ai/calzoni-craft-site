@@ -1,4 +1,5 @@
 import mascot from "@/assets/mascot-pointing.png";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const WhatsAppButton = () => {
