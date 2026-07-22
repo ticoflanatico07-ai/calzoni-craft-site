@@ -1,5 +1,5 @@
 import { MapPin, Clock } from "lucide-react";
-import { WHATSAPP_LINK, PHONE_DISPLAY } from "@/lib/constants";
+import { getWhatsAppLink, PHONE_DISPLAY } from "@/lib/constants";
 
 const WhatsAppLogo = ({ className = "w-6 h-6" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="currentColor">
@@ -48,7 +48,7 @@ const contactItems = [
     title: "💬 WhatsApp",
       content: (
         <a
-          href={WHATSAPP_LINK}
+          href={getWhatsAppLink("contact_section")}
           target="_blank"
           rel="noopener noreferrer"
           className="font-body text-muted-foreground text-sm leading-relaxed hover:text-[#25D366] transition-colors"
