@@ -2,6 +2,7 @@ import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
 import { trackOrderClick } from "@/lib/analytics";
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 
 const HeroSection = () => {
