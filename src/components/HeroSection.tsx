@@ -2,6 +2,7 @@ import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
 import { trackOrderClick } from "@/lib/analytics";
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 
 const HeroSection = () => {
@@ -51,7 +52,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
-            href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+            href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackOrderClick("hero")}
