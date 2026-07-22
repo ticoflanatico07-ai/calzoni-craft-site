@@ -1,6 +1,6 @@
 import mascot from "@/assets/mascot-pointing.png";
 import { trackWhatsAppClick } from "@/lib/analytics";
-import { WHATSAPP_LINK } from "@/lib/constants";
+import { getWhatsAppLink } from "@/lib/constants";
 
 const WhatsAppButton = () => {
   return (
@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
         className="absolute left-1/2 -translate-x-1/2 -top-16 md:-top-20 w-16 h-16 md:w-20 md:h-20 pointer-events-none select-none drop-shadow-lg"
       />
       <a
-      href={WHATSAPP_LINK}
+      href={getWhatsAppLink("floating_button")}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick("floating_button")}
