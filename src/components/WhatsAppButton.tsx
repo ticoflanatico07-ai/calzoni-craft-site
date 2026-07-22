@@ -1,4 +1,5 @@
 import mascot from "@/assets/mascot-pointing.png";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const WhatsAppButton = () => {
@@ -13,6 +14,7 @@ const WhatsAppButton = () => {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick("floating_button")}
       className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"
       aria-label="Fale conosco pelo WhatsApp"
     >
