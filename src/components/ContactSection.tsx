@@ -52,7 +52,7 @@ const contactItems = [
           rel="noopener noreferrer"
           className="font-body text-muted-foreground text-sm leading-relaxed hover:text-[#25D366] transition-colors"
         >
-          📞 (93) 9 9207-9482
+          📞 (93) 99207-9482
         </a>
       ),
   },
