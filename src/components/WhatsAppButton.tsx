@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
         className="absolute left-1/2 -translate-x-1/2 -top-16 md:-top-20 w-16 h-16 md:w-20 md:h-20 pointer-events-none select-none drop-shadow-lg"
       />
       <a
-      href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+      href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow duration-300 animate-whatsapp-ring"

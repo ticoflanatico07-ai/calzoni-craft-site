@@ -48,12 +48,12 @@ const contactItems = [
     title: "💬 WhatsApp",
       content: (
         <a
-          href="https://wa.me/5593992079482?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="font-body text-muted-foreground text-sm leading-relaxed hover:text-[#25D366] transition-colors"
         >
-          📞 (93) 99207-9482
+          📞 {PHONE_DISPLAY}
         </a>
       ),
   },
