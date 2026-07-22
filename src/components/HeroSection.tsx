@@ -2,7 +2,7 @@ import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
 import { trackOrderClick } from "@/lib/analytics";
-import { WHATSAPP_LINK } from "@/lib/constants";
+import { getWhatsAppLink } from "@/lib/constants";
 
 
 const HeroSection = () => {
@@ -52,7 +52,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
-            href={WHATSAPP_LINK}
+            href={getWhatsAppLink("hero")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackOrderClick("hero")}
