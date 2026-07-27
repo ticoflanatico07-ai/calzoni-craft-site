@@ -12,17 +12,12 @@ export type WhatsAppSource =
   | "floating_button";
 
 /**
- * Gera um link do WhatsApp com UTMs (para relatórios/referrer)
- * e com a origem embutida na mensagem pré-preenchida,
- * já que o wa.me descarta query params ao redirecionar.
+ * Gera um link do WhatsApp com a origem embutida na mensagem pré-preenchida.
  */
 export const getWhatsAppLink = (source: WhatsAppSource): string => {
   const baseText = `Olá! Gostaria de fazer um pedido. [origem: ${source}]`;
   const params = new URLSearchParams({
     text: baseText,
-    utm_source: "site",
-    utm_medium: source,
-    utm_campaign: "whatsapp_click",
   });
   return `https://wa.me/${WHATSAPP_NUMBER}?${params.toString()}`;
 };
