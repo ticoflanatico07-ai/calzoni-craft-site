@@ -8,7 +8,7 @@ declare global {
 export const trackOrderClick = (location: string) => {
   // Google Analytics 4 - evento personalizado
   if (window.gtag) {
-    window.gtag("event", "click_whatsapp", {
+    window.gtag("event", "click_order", {
       event_category: "conversion",
       event_label: location,
       value: 1,
@@ -17,7 +17,7 @@ export const trackOrderClick = (location: string) => {
 
   // Meta Pixel - evento personalizado
   if (window.fbq) {
-    window.fbq("trackCustom", "ClickWhatsApp", {
+    window.fbq("trackCustom", "ClickOrder", {
       location,
       content_name: "Peça Agora",
     });
