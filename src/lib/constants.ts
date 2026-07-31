@@ -1,7 +1,7 @@
 export const WHATSAPP_NUMBER = "5593992079482";
 export const PHONE_DISPLAY = "(93) 99207-9482";
 export const ANOTAAI_LINK =
-  "https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria";
+  "https://wa.me/5593992162374?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido.";
 
 export type WhatsAppSource =
   | "hero"
