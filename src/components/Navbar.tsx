@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href={ANOTAAI_LINK}
+          href={getWhatsAppLink("navbar_desktop")}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackOrderClick("navbar_desktop")}
@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href={ANOTAAI_LINK}
+              href={getWhatsAppLink("navbar_mobile_scrolled")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackOrderClick("navbar_mobile_scrolled")}
@@ -97,7 +97,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href={ANOTAAI_LINK}
+                href={getWhatsAppLink("navbar_mobile_menu")}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackOrderClick("navbar_mobile_menu")}
