@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import { trackOrderClick } from "@/lib/analytics";
-import { getWhatsAppLink } from "@/lib/constants";
+import { ANOTAAI_LINK } from "@/lib/constants";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href={getWhatsAppLink("navbar_desktop")}
+          href={ANOTAAI_LINK}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackOrderClick("navbar_desktop")}
@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href={getWhatsAppLink("navbar_mobile_scrolled")}
+              href={ANOTAAI_LINK}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackOrderClick("navbar_mobile_scrolled")}
@@ -97,7 +97,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href={getWhatsAppLink("navbar_mobile_menu")}
+                href={ANOTAAI_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackOrderClick("navbar_mobile_menu")}
