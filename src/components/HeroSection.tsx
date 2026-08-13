@@ -1,8 +1,8 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
-import { trackOrderClick } from "@/lib/analytics";
-import { ANOTAAI_LINK } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
+import { getWhatsAppLink } from "@/lib/constants";
 
 
 const HeroSection = () => {
@@ -52,10 +52,10 @@ const HeroSection = () => {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
-            href={ANOTAAI_LINK}
+            href={getWhatsAppLink("hero")}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackOrderClick("hero")}
+            onClick={() => trackWhatsAppClick("hero")}
             className="bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
           >
             Peça Agora
