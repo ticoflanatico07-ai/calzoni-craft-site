@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logoCalzoni from "@/assets/logo-calzoni.png";
-import { trackOrderClick } from "@/lib/analytics";
-import { ANOTAAI_LINK } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
+import { getWhatsAppLink } from "@/lib/constants";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
