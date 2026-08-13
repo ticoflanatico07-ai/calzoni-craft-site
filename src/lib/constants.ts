@@ -1,5 +1,5 @@
-export const WHATSAPP_NUMBER = "5593992079482";
-export const PHONE_DISPLAY = "(93) 99207-9482";
+export const WHATSAPP_NUMBER = "5593992162374";
+export const PHONE_DISPLAY = "(93) 99216-2374";
 
 /** Cardápio digital (Anota Aí) usado nos botões "Peça Agora" */
 export const ANOTAAI_LINK = "https://pedido.anota.ai/loja/anotaai-calzoni-pizzaria?f=msa";
