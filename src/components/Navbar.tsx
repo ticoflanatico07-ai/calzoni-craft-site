@@ -49,10 +49,10 @@ const Navbar = () => {
         </ul>
 
         <a
-          href={ANOTAAI_LINK}
+          href={getWhatsAppLink("navbar_desktop")}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => trackOrderClick("navbar_desktop")}
+          onClick={() => trackWhatsAppClick("navbar_desktop")}
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
         >
           Peça Agora
@@ -62,10 +62,10 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href={ANOTAAI_LINK}
+              href={getWhatsAppLink("navbar_mobile_scrolled")}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackOrderClick("navbar_mobile_scrolled")}
+              onClick={() => trackWhatsAppClick("navbar_mobile_scrolled")}
               className="inline-flex items-center bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-sm font-body text-xs font-semibold tracking-wider uppercase hover:bg-gold-light transition-all animate-fade-in"
             >
               Peça Agora
@@ -97,10 +97,10 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href={ANOTAAI_LINK}
+                href={getWhatsAppLink("navbar_mobile_menu")}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackOrderClick("navbar_mobile_menu")}
+                onClick={() => trackWhatsAppClick("navbar_mobile_menu")}
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-sm font-body text-sm font-semibold tracking-wider uppercase"
               >
                 Peça Agora
