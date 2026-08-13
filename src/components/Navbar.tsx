@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logoCalzoni from "@/assets/logo-calzoni.png";
-import { trackWhatsAppClick } from "@/lib/analytics";
-import { getWhatsAppLink } from "@/lib/constants";
+import { trackOrderClick } from "@/lib/analytics";
+import { ANOTAAI_LINK } from "@/lib/constants";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -49,10 +49,10 @@ const Navbar = () => {
         </ul>
 
         <a
-          href={getWhatsAppLink("navbar_desktop")}
+          href={ANOTAAI_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => trackWhatsAppClick("navbar_desktop")}
+          onClick={() => trackOrderClick("navbar_desktop")}
           className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-sm font-body text-sm font-semibold tracking-wider uppercase hover:bg-gold-light transition-colors"
         >
           Peça Agora
@@ -62,10 +62,10 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           {isScrolled && (
             <a
-              href={getWhatsAppLink("navbar_mobile_scrolled")}
+              href={ANOTAAI_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackWhatsAppClick("navbar_mobile_scrolled")}
+              onClick={() => trackOrderClick("navbar_mobile_scrolled")}
               className="inline-flex items-center bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-sm font-body text-xs font-semibold tracking-wider uppercase hover:bg-gold-light transition-all animate-fade-in"
             >
               Peça Agora
@@ -97,10 +97,10 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href={getWhatsAppLink("navbar_mobile_menu")}
+                href={ANOTAAI_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick("navbar_mobile_menu")}
+                onClick={() => trackOrderClick("navbar_mobile_menu")}
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-sm font-body text-sm font-semibold tracking-wider uppercase"
               >
                 Peça Agora
