@@ -13,12 +13,13 @@ export type WhatsAppSource =
   | "floating_button";
 
 /**
- * Gera um link do WhatsApp com a origem embutida na mensagem pré-preenchida.
+ * Gera um link do WhatsApp com mensagem pré-preenchida limpa.
+ * O rastreamento da origem é feito via eventos de analytics (GA4 / Meta Pixel),
+ * não pelo texto da mensagem.
  */
-export const getWhatsAppLink = (source: WhatsAppSource): string => {
-  const baseText = `Olá! Gostaria de fazer um pedido. [origem: ${source}]`;
+export const getWhatsAppLink = (_source?: WhatsAppSource): string => {
   const params = new URLSearchParams({
-    text: baseText,
+    text: "Olá! Gostaria de fazer um pedido.",
   });
   return `https://wa.me/${WHATSAPP_NUMBER}?${params.toString()}`;
 };
