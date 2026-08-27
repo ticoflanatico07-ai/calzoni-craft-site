@@ -1,79 +1,163 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import heroPizza from "@/assets/hero-pizza.jpg";
-import logoCalzoni from "@/assets/logo-calzoni.png";
-import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
 import { trackOrderClick } from "@/lib/analytics";
 import { ANOTAAI_LINK } from "@/lib/constants";
 
+const navItems = [
+  { label: "01 Início", href: "#inicio" },
+  { label: "02 Sobre", href: "#sobre" },
+  { label: "03 Contato", href: "#contato" },
+];
 
 const HeroSection = () => {
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-0 mb-0">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroPizza}
-          alt="Pizza artesanal Calzoni"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-      </div>
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <div className="relative w-48 sm:w-56 md:w-64 mx-auto mb-8 mt-16 sm:mt-20 md:mt-24">
-          {/* Steam effect */}
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[130%] h-32 pointer-events-none z-20 animate-steam-fade">
-            <div className="absolute left-[15%] bottom-0 w-5 h-20 rounded-full bg-white/40 blur-md animate-steam-rise" style={{ animationDelay: '0s' }} />
-            <div className="absolute left-[28%] bottom-0 w-6 h-24 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.4s' }} />
-            <div className="absolute left-[42%] bottom-0 w-5 h-22 rounded-full bg-white/40 blur-md animate-steam-rise" style={{ animationDelay: '0.2s' }} />
-            <div className="absolute left-[55%] bottom-0 w-7 h-26 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.6s' }} />
-            <div className="absolute left-[68%] bottom-0 w-5 h-20 rounded-full bg-white/40 blur-md animate-steam-rise" style={{ animationDelay: '0.1s' }} />
-            <div className="absolute left-[80%] bottom-0 w-6 h-22 rounded-full bg-white/35 blur-lg animate-steam-rise" style={{ animationDelay: '0.45s' }} />
-            <div className="absolute left-[35%] bottom-0 w-4 h-18 rounded-full bg-white/30 blur-xl animate-steam-rise" style={{ animationDelay: '0.7s' }} />
-            <div className="absolute left-[60%] bottom-0 w-4 h-18 rounded-full bg-white/30 blur-xl animate-steam-rise" style={{ animationDelay: '0.35s' }} />
-          </div>
-          <div className="animate-logo-3d rounded-2xl overflow-hidden border border-primary/20">
-            <img
-              src={logoCalzoni}
-              alt="Calzoni Pizzaria"
-              className="w-full"
-            />
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-screen w-full overflow-hidden bg-background text-foreground flex items-center justify-center p-6 md:p-16"
+    >
+      {/* Background grid texture */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(hsl(var(--primary)) 0.5px, transparent 0.5px)",
+          backgroundSize: "30px 30px",
+        }}
+      />
+
+      <div className="relative z-10 max-w-7xl w-full min-h-screen grid grid-cols-12 grid-rows-6 gap-4">
+        {/* Logo / brand mark */}
+        <div className="col-span-6 row-span-1 flex items-start pt-6 md:pt-10">
+          <div className="flex flex-col">
+            <span className="text-primary font-bold text-2xl tracking-tighter font-display">
+              CALZONI
+            </span>
+            <span className="text-[8px] tracking-[0.4em] opacity-40 uppercase font-body">
+              Pizzaria Gourmet
+            </span>
           </div>
         </div>
-        <p
-          className="font-body text-foreground/70 text-lg md:text-xl max-w-xl mx-auto mb-10 animate-fade-in-up"
-          style={{ animationDelay: "0.6s", opacity: 0 }}
-        >
-          Sabores autênticos, massa artesanal e ingredientes selecionados.
-          Uma experiência gastronômica única.
-        </p>
-        <div
-          className="flex flex-col items-center gap-6 animate-fade-in-up"
-          style={{ animationDelay: "0.8s", opacity: 0 }}
-        >
+
+        {/* Desktop navigation — stacked, top right */}
+        <nav className="hidden md:flex col-span-6 row-span-1 flex-col items-end gap-1 pt-10 text-[10px] tracking-[0.3em] font-medium text-foreground/60 font-body">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="hover:text-primary transition-colors duration-300"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Mobile menu toggle */}
+        <div className="flex md:hidden col-span-6 row-span-1 justify-end items-start pt-6">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-foreground/60 hover:text-primary transition-colors duration-300"
+            aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile menu overlay */}
+        {mobileMenuOpen && (
+          <div className="md:hidden fixed inset-0 z-50 bg-background/98 backdrop-blur-md flex flex-col items-center justify-center gap-8 animate-fade-in">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-sm tracking-[0.3em] font-medium text-foreground/60 hover:text-primary transition-colors duration-300 font-body uppercase"
+              >
+                {item.label}
+              </a>
+            ))}
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="absolute top-6 right-6 text-foreground/60 hover:text-primary transition-colors duration-300"
+              aria-label="Fechar menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+        )}
+
+        {/* Main headline — left aligned */}
+        <div className="col-span-12 md:col-span-9 row-start-2 row-span-3 flex flex-col justify-center">
+          <h1 className="font-display text-6xl sm:text-7xl md:text-[10rem] font-extrabold leading-[0.85] tracking-tighter uppercase">
+            Pizza
+            <br />
+            <span
+              className="text-transparent"
+              style={{ WebkitTextStroke: "1px hsl(var(--primary))" }}
+            >
+              Futura
+            </span>
+          </h1>
+          <p className="mt-8 max-w-md text-sm md:text-base text-foreground/50 leading-relaxed font-light font-body">
+            A fusão entre a tradição artesanal e a precisão tecnológica. Massa
+            fermentada naturalmente e ingredientes selecionados.
+          </p>
+        </div>
+
+        {/* Floating product image — right/center */}
+        <div className="absolute right-0 md:right-[5%] top-[28%] sm:top-[22%] md:top-[20%] w-[55%] sm:w-[45%] md:w-[35%] pointer-events-none animate-float flex justify-center items-center">
+          <div className="relative w-full">
+            <img
+              src={heroPizza}
+              alt="Pizza artesanal Calzoni"
+              className="w-full aspect-square object-cover rounded-full border-[8px] md:border-[10px] border-secondary/50 shadow-[0_50px_80px_rgba(0,0,0,0.8)]"
+            />
+            {/* Depth elements */}
+            <div className="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 w-16 h-16 md:w-24 md:h-24 border border-primary/20 rounded-full animate-pulse" />
+            <div className="absolute top-0 -right-4 w-10 h-10 md:w-12 md:h-12 bg-primary/10 blur-xl rounded-full" />
+          </div>
+        </div>
+
+        {/* Minimal CTAs — bottom left */}
+        <div className="col-span-12 md:col-span-6 row-start-5 md:row-start-6 flex flex-col items-start gap-4 self-end pb-6 md:pb-8 z-20">
           <a
             href={ANOTAAI_LINK}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackOrderClick("hero")}
-            className="bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
+            className="group flex items-center gap-3 md:gap-4 text-xs font-bold tracking-[0.2em] text-primary transition-all duration-300 font-body uppercase"
           >
-            Peça Agora
+            <span>Fazer Pedido</span>
+            <div className="flex items-center">
+              <div className="w-10 md:w-12 h-[1px] bg-primary transition-all duration-500 group-hover:w-16 md:group-hover:w-20" />
+              <span className="-ml-2 transition-all duration-500 group-hover:-ml-1">
+                →
+              </span>
+            </div>
           </a>
-          <a href="#cardapio" className="animate-bounce mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-              <path d="M12 5v14" />
-              <path d="m19 12-7 7-7-7" />
-            </svg>
+          <a
+            href="#sobre"
+            className="group flex items-center gap-3 md:gap-4 text-xs font-bold tracking-[0.2em] text-foreground/40 hover:text-foreground transition-all duration-300 font-body uppercase"
+          >
+            <span>Saiba Mais</span>
+            <div className="flex items-center">
+              <div className="w-6 md:w-8 h-[1px] bg-foreground/20 group-hover:bg-primary transition-all duration-500" />
+              <span className="-ml-2 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                →
+              </span>
+            </div>
           </a>
-          <div className="mt-4 flex flex-col items-center gap-3">
-            <img
-              src={cupomFidelidade}
-              alt="Campanha Cupom Fidelidade Calzoni"
-              className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
-              loading="lazy"
-            />
-            <p className="font-display text-sm sm:text-base md:text-xl font-bold text-white text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] leading-tight px-2">
+        </div>
+
+        {/* Loyalty campaign badge — bottom right */}
+        <div className="col-span-12 md:col-span-6 row-start-6 hidden md:flex flex-col items-end self-end pb-8 text-right z-20">
+          <div className="p-4 border border-primary/20 bg-secondary/50 backdrop-blur-md">
+            <p className="text-[10px] text-primary font-bold tracking-widest font-body uppercase">
+              Fidelidade
+            </p>
+            <p className="text-[9px] text-foreground/50 mt-1 uppercase font-body">
               Junte 10 cupons e ganhe uma pizza Grande
             </p>
           </div>
