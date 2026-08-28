@@ -7,8 +7,10 @@ import p6 from "@/assets/pizza1.jpeg";
 import p7 from "@/assets/pizza2.jpeg";
 import p8 from "@/assets/pizza3.jpeg";
 import p9 from "@/assets/pizza4.jpeg";
+import p10Asset from "@/assets/pizza-new-6.jpeg.asset.json";
 
 const photos = [
+  { src: p10Asset.url, alt: "Pizza meio quatro queijos meio presunto Calzoni" },
   { src: p1, alt: "Pizza meio calabresa meio chocolate Calzoni" },
   { src: p2, alt: "Pizza artesanal Calzoni saindo do forno" },
   { src: p3, alt: "Pizza margherita Calzoni" },
