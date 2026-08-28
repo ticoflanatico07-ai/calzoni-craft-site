@@ -90,7 +90,7 @@ const HeroSection = () => {
 
         {/* Main headline — left aligned */}
         <div className="col-span-12 md:col-span-9 row-start-2 row-span-3 flex flex-col justify-center">
-          <h1 className="font-display text-6xl sm:text-7xl md:text-[10rem] font-extrabold leading-[0.85] tracking-tighter uppercase">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] font-extrabold leading-[0.85] tracking-tighter uppercase">
             Pizza
             <br />
             <span
