@@ -90,7 +90,7 @@ const HeroSection = () => {
 
         {/* Main headline — left aligned */}
         <div className="col-span-12 md:col-span-9 row-start-2 row-span-3 flex flex-col justify-center">
-          <h1 className="font-display text-6xl sm:text-7xl md:text-[10rem] font-extrabold leading-[0.85] tracking-tighter uppercase">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] font-extrabold leading-[0.85] tracking-tighter uppercase">
             Pizza
             <br />
             <span
@@ -107,16 +107,16 @@ const HeroSection = () => {
         </div>
 
         {/* Floating product image — right/center */}
-        <div className="absolute right-0 md:right-[5%] top-[28%] sm:top-[22%] md:top-[20%] w-[55%] sm:w-[45%] md:w-[35%] pointer-events-none animate-float flex justify-center items-center">
+        <div className="absolute right-[2%] md:right-[5%] top-[10%] sm:top-[14%] md:top-[18%] w-[35%] sm:w-[32%] md:w-[30%] pointer-events-none animate-float flex justify-center items-center">
           <div className="relative w-full">
             <img
               src={heroPizza}
               alt="Pizza artesanal Calzoni"
-              className="w-full aspect-square object-cover rounded-full border-[8px] md:border-[10px] border-secondary/50 shadow-[0_50px_80px_rgba(0,0,0,0.8)]"
+              className="w-full aspect-square object-cover rounded-full border-[6px] md:border-[10px] border-secondary/50 shadow-[0_50px_80px_rgba(0,0,0,0.8)]"
             />
             {/* Depth elements */}
-            <div className="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 w-16 h-16 md:w-24 md:h-24 border border-primary/20 rounded-full animate-pulse" />
-            <div className="absolute top-0 -right-4 w-10 h-10 md:w-12 md:h-12 bg-primary/10 blur-xl rounded-full" />
+            <div className="absolute -bottom-4 -left-4 md:-bottom-10 md:-left-10 w-12 h-12 md:w-24 md:h-24 border border-primary/20 rounded-full animate-pulse" />
+            <div className="absolute top-0 -right-3 md:-right-4 w-8 h-8 md:w-12 md:h-12 bg-primary/10 blur-xl rounded-full" />
           </div>
         </div>
 
