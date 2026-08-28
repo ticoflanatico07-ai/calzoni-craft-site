@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PhotoGallery from "@/components/PhotoGallery";
 import AboutSection from "@/components/AboutSection";
@@ -9,7 +8,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <HeroSection />
       <PhotoGallery />
       <AboutSection />
