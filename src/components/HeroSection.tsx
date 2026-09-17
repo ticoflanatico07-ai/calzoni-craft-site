@@ -1,4 +1,4 @@
-import heroPizza from "@/assets/hero-pizza.jpg";
+import heroPizza from "@/assets/hero-pizza.webp";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.webp";
 import promoCashback from "@/assets/promo-cashback.webp";
