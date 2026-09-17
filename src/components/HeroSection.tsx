@@ -1,6 +1,6 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
-import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
+import cupomFidelidade from "@/assets/cupom-fidelidade.webp.asset.json";
 import promoCashback from "@/assets/promo-cashback.png.asset.json";
 import promoDesconto from "@/assets/promo-desconto.png.asset.json";
 import { trackOrderClick } from "@/lib/analytics";
@@ -66,14 +66,20 @@ const HeroSection = () => {
             <img
               src={promoCashback.url}
               alt="5% de cashback pagando com Pix ou Cartão"
+              width={443}
+              height={114}
               className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
               loading="lazy"
+              decoding="async"
             />
             <img
               src={promoDesconto.url}
               alt="Desconto de 7% em itens usando o cupom PRIMEIRAPEDIDO"
+              width={443}
+              height={114}
               className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <a href="#cardapio" className="animate-bounce mt-2">
@@ -84,10 +90,13 @@ const HeroSection = () => {
           </a>
           <div className="mt-4 flex flex-col items-center gap-3">
             <img
-              src={cupomFidelidade}
+              src={cupomFidelidade.url}
               alt="Campanha Cupom Fidelidade Calzoni"
+              width={576}
+              height={720}
               className="w-56 sm:w-64 md:w-72 rounded-lg border border-primary/20 shadow-lg shadow-black/40"
               loading="lazy"
+              decoding="async"
             />
             <p className="font-display text-sm sm:text-base md:text-xl font-bold text-white text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] leading-tight px-2">
               Junte 10 cupons e ganhe uma pizza Grande
