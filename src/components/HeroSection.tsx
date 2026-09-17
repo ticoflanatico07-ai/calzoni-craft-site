@@ -1,8 +1,8 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
-import cupomFidelidade from "@/assets/cupom-fidelidade.webp.asset.json";
-import promoCashback from "@/assets/promo-cashback.png.asset.json";
-import promoDesconto from "@/assets/promo-desconto.png.asset.json";
+import cupomFidelidade from "@/assets/cupom-fidelidade.webp";
+import promoCashback from "@/assets/promo-cashback.webp";
+import promoDesconto from "@/assets/promo-desconto.webp";
 import { trackOrderClick } from "@/lib/analytics";
 import { ANOTAAI_LINK } from "@/lib/constants";
 
@@ -64,7 +64,7 @@ const HeroSection = () => {
           </a>
           <div className="flex items-center justify-center gap-3">
             <img
-              src={promoCashback.url}
+              src={promoCashback}
               alt="5% de cashback pagando com Pix ou Cartão"
               width={443}
               height={114}
@@ -73,7 +73,7 @@ const HeroSection = () => {
               decoding="async"
             />
             <img
-              src={promoDesconto.url}
+              src={promoDesconto}
               alt="Desconto de 7% em itens usando o cupom PRIMEIRAPEDIDO"
               width={443}
               height={114}
@@ -90,7 +90,7 @@ const HeroSection = () => {
           </a>
           <div className="mt-4 flex flex-col items-center gap-3">
             <img
-              src={cupomFidelidade.url}
+              src={cupomFidelidade}
               alt="Campanha Cupom Fidelidade Calzoni"
               width={576}
               height={720}
