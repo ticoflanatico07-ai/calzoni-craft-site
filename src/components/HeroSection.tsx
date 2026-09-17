@@ -1,6 +1,8 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
+import promoCashback from "@/assets/promo-cashback.png.asset.json";
+import promoDesconto from "@/assets/promo-desconto.png.asset.json";
 import { trackOrderClick } from "@/lib/analytics";
 import { ANOTAAI_LINK } from "@/lib/constants";
 
@@ -60,6 +62,20 @@ const HeroSection = () => {
           >
             Peça Agora
           </a>
+          <div className="flex items-center justify-center gap-3">
+            <img
+              src={promoCashback.url}
+              alt="5% de cashback pagando com Pix ou Cartão"
+              className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
+              loading="lazy"
+            />
+            <img
+              src={promoDesconto.url}
+              alt="Desconto de 7% em itens usando o cupom PRIMEIRAPEDIDO"
+              className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
+              loading="lazy"
+            />
+          </div>
           <a href="#cardapio" className="animate-bounce mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
               <path d="M12 5v14" />
