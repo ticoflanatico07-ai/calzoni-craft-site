@@ -1,6 +1,8 @@
 import heroPizza from "@/assets/hero-pizza.jpg";
 import logoCalzoni from "@/assets/logo-calzoni.png";
 import cupomFidelidade from "@/assets/cupom-fidelidade.jpg";
+import promoCashback from "@/assets/promo-cashback.png.asset.json";
+import promoDesconto from "@/assets/promo-desconto.png.asset.json";
 import { trackOrderClick } from "@/lib/analytics";
 import { ANOTAAI_LINK } from "@/lib/constants";
 
