@@ -1,4 +1,4 @@
-import mascot from "@/assets/mascot-pointing.png";
+import mascot from "@/assets/mascot-pointing.webp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { getWhatsAppLink } from "@/lib/constants";
 
