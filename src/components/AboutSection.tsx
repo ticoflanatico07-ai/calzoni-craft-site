@@ -55,7 +55,7 @@ const AboutSection = () => {
                 <img
                   src={review.image}
                   alt={review.alt}
-                  loading="lazy"
+                  loading="eager"
                   className="w-full h-auto rounded-sm object-contain group-hover:scale-[1.02] transition-transform duration-500"
                 />
               </a>

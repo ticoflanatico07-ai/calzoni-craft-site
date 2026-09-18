@@ -51,7 +51,7 @@ const PhotoGallery = () => {
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
