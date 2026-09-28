@@ -194,6 +194,22 @@
   50% { transform: translateX(-6px); }
 }
 
+@keyframes promo-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 6px 12px hsl(var(--gold) / 0.25));
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+    filter: drop-shadow(0 14px 22px hsl(var(--gold) / 0.45));
+  }
+}
+
+.animate-promo-float {
+  animation: promo-float 2.6s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
 
 html {
   scroll-behavior: smooth;

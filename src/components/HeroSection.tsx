@@ -62,25 +62,41 @@ const HeroSection = () => {
           >
             Peça Agora
           </a>
-          <div className="flex items-center justify-center gap-3">
-            <img
-              src={promoCashback}
-              alt="5% de cashback pagando com Pix ou Cartão"
-              width={443}
-              height={114}
-              className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              src={promoDesconto}
-              alt="Desconto de 7% em itens usando o cupom PRIMEIRAPEDIDO"
-              width={443}
-              height={114}
-              className="w-36 sm:w-44 md:w-52 rounded-md shadow-lg shadow-black/40"
-              loading="lazy"
-              decoding="async"
-            />
+          <div className="flex items-center justify-center gap-4 sm:gap-5">
+            <a
+              href={ANOTAAI_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover-scale"
+            >
+              <img
+                src={promoCashback}
+                alt="5% de cashback pagando com Pix ou Cartão"
+                width={443}
+                height={114}
+                className="w-48 sm:w-64 md:w-80 rounded-md shadow-lg shadow-black/40 animate-promo-float"
+                style={{ animationDelay: "0s" }}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <a
+              href={ANOTAAI_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover-scale"
+            >
+              <img
+                src={promoDesconto}
+                alt="Desconto de 7% em itens usando o cupom PRIMEIRAPEDIDO"
+                width={443}
+                height={114}
+                className="w-48 sm:w-64 md:w-80 rounded-md shadow-lg shadow-black/40 animate-promo-float"
+                style={{ animationDelay: "0.7s" }}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </div>
           <a href="#cardapio" className="animate-bounce mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
