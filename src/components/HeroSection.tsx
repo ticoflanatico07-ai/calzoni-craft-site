@@ -1,5 +1,5 @@
 import heroPizza from "@/assets/hero-pizza.webp";
-import logoCalzoni from "@/assets/logo-calzoni.png";
+import logoCalzoni from "@/assets/logo-calzoni-outubro-rosa.webp";
 import cupomFidelidade from "@/assets/cupom-fidelidade.webp";
 import promoCashback from "@/assets/promo-cashback.webp";
 import promoDesconto from "@/assets/promo-desconto.webp";
