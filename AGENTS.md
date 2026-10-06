@@ -1,0 +1,1 @@
+- AI calls live in Lovable Cloud edge functions (supabase/functions); menu list for recommendations lives in recomendar-pizza/index.ts — keeps the key server-side.
